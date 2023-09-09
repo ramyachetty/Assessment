@@ -9,7 +9,10 @@ echo "You are a child "
 elif [ $age -ge 13 ] && [ $age -le 19 ]
 then
 echo "You are a teenager"
-elif [ $age -ge 20 ]
+elif [ $age -ge 20 ] && [ $age -lt 60 ]
 then
 echo "You are an adult"
+elif [ $age -ge 60 ]
+then
+echo "You are in oldage"
 fi
