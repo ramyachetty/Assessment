@@ -3,9 +3,12 @@
 echo "Enter the salary"
 read sal
 
-if [ $sal -le 20000 ]
+if [ $sal -lt 20000 ]
 then
 echo "No tax"
+elif [ $sal -eq 20000 ]
+then
+echo " 2% tax"
 elif [ $sal -gt 20000 ] && [ $sal -le 40000 ]
 then
  echo "5% tax"

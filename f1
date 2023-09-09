@@ -8,6 +8,7 @@ echo "Enter the math operation u want"
 echo "Press a for addition"
 echo "press m for multiplication"
 echo "press s for substraction"
+echo "press d for Division "
 
 read T
 case $T in
@@ -16,6 +17,8 @@ case $T in
 m)echo "The multiplication of $a and $b is $(($a * $b))"
 ;;
 s)echo "the substraction of $a and $b is $(($a - $b))"
+;;
+d)echo "the division of $a and $b is $(($a / $b))"
 ;;
 *)echo "Press the prescribed keys only"
 ;;
